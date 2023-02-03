@@ -12,6 +12,9 @@ function App() {
     const validateMe = (e) => {
         e.preventDefault();
         console.log("Form submitted!")
+        if(name.length && regNo.length && phoneNo.length && email.length){
+            alert("Form validated!")
+        }
     }
 
   return (
